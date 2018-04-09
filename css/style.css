@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  padding-top: 88px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 14px;
+  color: #81868e;
+  padding-bottom: 70px;
+}
+
+body #Hello {
+  max-width: 1370px;
+  width: 100%;
+  height: 737px;
+  color: #fff;
+}
+
+body #Hello .slider1 {
+  position: relative;
+}
+
+body #Hello .slider1 header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  color: #fff;
+}
+
+body #Hello .slider1 header .logo {
+  flex-basis: 70%;
+  font-family: "Myriad Pro", Verdana, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body #Hello .slider1 header .menu {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+body #Hello .slider1 header .menu a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
+body #Hello .slider1 header .menu a:hover {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
+body #Hello .slider1 .slider-container {
+  width: 100%;
+  height: 737px;
+  overflow: hidden;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper {
+  width: 300%;
+  height: 737px;
+  display: flex;
+  position: relative;
+  transition: transform 0.7s ease-in-out;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper .slide {
+  width: calc(100% / 3);
+  height: 737px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper .slide h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  color: #f3f3f3;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper .slide p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #f3f3f3;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper .slide:nth-child(1) {
+  background-image: url(../img/hello.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper .slide:nth-child(2) {
+  background-color: yellowgreen;
+}
+
+body #Hello .slider1 .slider-container .slider-wrapper .slide:nth-child(3) {
+  background-color: royalblue;
+}
+
+body #Hello .slider1 .button {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #008080;
+  position: absolute;
+  bottom: 77px;
+  left: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body #Portfolio {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+body #Portfolio .container {
+  text-align: center;
+}
+
+body #Portfolio .container .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+body #Portfolio .container .nav .navItem {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+body #Portfolio .container .nav .navItem .hoverEffect {
+  border: 0.75px solid #008080;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 15px;
+  opacity: 0;
+}
+
+body #Portfolio .container .nav .navItem p:hover + .hoverEffect {
+  opacity: 1;
+}
+
+body #Portfolio .container .gallery {
+  padding-bottom: 100px;
+}
+
+body #Team .container {
+  text-align: center;
+}
+
+body #Team .container .slider2 {
+  width: 100%;
+  height: 434px;
+}
+
+body #Team .container .slider2 .slider2-container {
+  width: 100%;
+  height: 366px;
+  overflow: hidden;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper {
+  display: flex;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide {
+  display: flex;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide img {
+  height: 100%;
+  width: auto;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information {
+  text-align: right;
+  padding: 25px 0;
+  color: #81868d;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information .member {
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information .member div {
+  padding-right: 47px;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information .member div .name {
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000;
+  line-height: 40px;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information .member div .position {
+  font-family: "Source Sans Pro", Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information .member .decoration {
+  border: 1.5px solid #008080;
+  display: block;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper .slide .information .memberDescription {
+  width: 50%;
+  padding-right: 50px;
+  float: right;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper #slide2 {
+  background-color: lightcoral;
+}
+
+body #Team .container .slider2 .slider2-container .slider2-wrapper #slide3 {
+  background-color: lightseagreen;
+}
+
+body #Team .container .slider2 .slider-nav {
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+body #Team .container .slider2 .slider-nav label {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #008080;
+  margin: 0 5px;
+}
+
+body #Team .container .slider2 .slider-nav label:hover {
+  background-color: #008080;
+}
+
+body .banner {
+  margin-top: 100px;
+  height: 200px;
+  width: 100%;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .banner p {
+  padding-bottom: 26px;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+}
+
+body .banner button {
+  width: 140px;
+  height: 38px;
+  border-radius: 19px;
+  background-color: transparent;
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+  font-family: "Open Sans", Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body #Testimonials {
+  width: 100%;
+  background-color: #f3f3f3;
+  padding-bottom: 100px;
+}
+
+body #Testimonials .container {
+  text-align: center;
+}
+
+body #Testimonials .container .slider3 {
+  width: 100%;
+  height: 316px;
+  background-color: #fff;
+}
+
+body #Testimonials .container .slider3 .slider3-container {
+  width: 100%;
+  height: 246px;
+  overflow: hidden;
+}
+
+body #Testimonials .container .slider3 .slider-nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body #Testimonials .container .slider3 .slider-nav label {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #008080;
+  margin: 0 5px;
+}
+
+body #Testimonials .container .slider3 .slider-nav label:hover {
+  background-color: #008080;
+}
