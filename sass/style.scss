@@ -291,6 +291,47 @@ body {
           width: 100%;
           height: 246px;
           overflow: hidden;
+          .slider3-wrapper {
+            display: flex;
+            padding-top: 50px;
+            .slide {
+              width: 100%;
+              height: 316px;
+              display: flex;
+              padding: 0 10%;
+
+              img {
+                // width: 130px;
+                height: 130px;
+                margin-right: 8%;
+              }
+              .contant {
+                text-align: left;
+                font-family: "Open Sans", Verdana, sans-serif;
+                .comment {
+                  font-size: 16px;
+                  line-height: 28px;
+                  padding-bottom: 20px;
+                  color: #81868e;
+                }
+                .userName {
+                  color: #008080;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                }
+                .userPosition {
+                  text-transform: uppercase;
+                  font-size: 14px;
+                }
+              }
+            }
+            #sl3-slide2 {
+              background-color: lightblue;
+            }
+            #sl3-slide3 {
+              background-color: lightpink;
+            }
+          }
         }
         .slider-nav {
           height: 70px;
