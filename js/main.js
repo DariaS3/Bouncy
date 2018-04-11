@@ -14,6 +14,15 @@ document.addEventListener("DOMContentLoaded", function() {
       "translateX(" + slidePosition / 3 + "%)";
   }
   nextSlide();
+  //scroll-button to next section
+  var button = document
+    .getElementById("Hello")
+    .getElementsByClassName("button")[0];
+  var prevSection = document.getElementById("Hello");
+  var nextSection = document.getElementById("Portfolio");
+  button.addEventListener("click", function() {
+    nextSection.scrollIntoView();
+  });
   //slider2 TEAM
   var slide = document
     .getElementsByClassName("slider2")[0]

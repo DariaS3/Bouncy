@@ -197,8 +197,52 @@
             </div>
         </div>
     </section>
-    <section id="Contact"></section>
-    <footer></footer>
+    <section id="Contact">
+        <h2>Contact us</h2>
+        <p class="description">At vero eos et accusamus odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+        <div id="map"></div>
+    </section>
+    <footer>
+        <div class="container">
+            <h2 class="logo">BOUNCY</h2>
+            <p class="description">At vero eos et accusamus odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+            <div class="socials">
+                <div class="social facebook">
+                    <img src="img/f.png" />
+                </div>
+                <div class="social twitter">
+                    <img src="img/bird.png" />
+                </div>
+                <div class="social linkedin">
+                    <img src="img/link.png" />
+                </div>
+                <div class="social instagramm">
+                    <img src="img/in.png" />
+                </div>
+                <div class="social vimeo">
+                    <img src="img/v.png" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function initMap() {
+            var coordinates = { lat: 50.449189, lng: 30.516672 };
+            var image = "img/favicon.png";
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: coordinates,
+                zoom: 5
+            });
+
+            var marker = new google.maps.Marker({
+                position: coordinates,
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhKhr5zaGmEO5l3rc4-5Igx4BZbEn5bTg&callback=initMap"
+        type="text/javascript"></script>
 </body>
 
 </html>

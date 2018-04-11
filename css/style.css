@@ -143,6 +143,7 @@ body #Hello .slider1 .button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 body #Portfolio {
@@ -406,4 +407,64 @@ body #Testimonials .container .slider3 .slider-nav label {
 
 body #Testimonials .container .slider3 .slider-nav label:hover {
   background-color: #008080;
+}
+
+body #Contact {
+  background-color: #fff;
+  text-align: center;
+}
+
+body #Contact #map {
+  width: 100%;
+  height: 440px;
+}
+
+body footer {
+  background-color: #fff;
+}
+
+body footer .container {
+  text-align: center;
+}
+
+body footer .container .logo {
+  font-family: "Myriad Pro", Verdana, sans-serif;
+  font-weight: bold;
+}
+
+body footer .container .socials {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+body footer .container .socials .social {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+body footer .container .socials .facebook {
+  background-color: #3b5998;
+}
+
+body footer .container .socials .twitter {
+  background-color: #26a6d1;
+}
+
+body footer .container .socials .linkedin {
+  background-color: #0e76a8;
+}
+
+body footer .container .socials .instagramm {
+  background-color: #3f729b;
+}
+
+body footer .container .socials .vimeo {
+  background-color: #86c9ef;
 }
