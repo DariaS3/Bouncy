@@ -159,6 +159,15 @@ body {
       }
       .gallery {
         padding-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+          padding: 5px 5px;
+          width: 25%;
+          height: auto;
+          background-position: center;
+        }
       }
     }
   }

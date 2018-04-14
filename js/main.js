@@ -23,6 +23,121 @@ document.addEventListener("DOMContentLoaded", function() {
   button.addEventListener("click", function() {
     nextSection.scrollIntoView();
   });
+  //create gallery
+  var data = [
+    {
+      image: "img/line1.1.png",
+      classImg: "print"
+    },
+    {
+      image: "img/line1.2.png",
+      classImg: "branding"
+    },
+    {
+      image: "img/line1.3.png",
+      classImg: "branding"
+    },
+    {
+      image: "img/line1.4.png",
+      classImg: "branding"
+    },
+    {
+      image: "img/line2.1.png",
+      classImg: "HTML"
+    },
+    {
+      image: "img/line2.2.png",
+      classImg: "branding"
+    },
+    {
+      image: "img/line2.3.png",
+      classImg: "HTML"
+    },
+    {
+      image: "img/line2.4.png",
+      classImg: "print"
+    }
+  ];
+  if (data) {
+    var productCount = data.length;
+    console.log(productCount);
+    var resultContainer = document.getElementsByClassName("gallery")[0];
+    console.log(resultContainer);
+    renderProduct();
+
+    function renderProduct(str) {
+      if (!str) {
+        //load all
+        for (var i = 0; i < productCount; i++) {
+          var arr = [];
+          for (var key in data[i]) {
+            arr.push(data[i][key]);
+          }
+          resultContainer.appendChild(createElement(arr));
+        }
+      } else {
+        //load matching product
+        resultContainer.innerHTML = "";
+        for (var i = 0; i < productCount; i++) {
+          if (data[i].classImg.toLowerCase().indexOf(str.toLowerCase()) != -1) {
+            var arr = [];
+
+            for (var key in data[i]) {
+              arr.push(data[i][key]);
+            }
+            resultContainer.appendChild(createElement(arr));
+          }
+        }
+      }
+    }
+    //нажатие на кнопку - активация сортировки
+    //all works
+    document.getElementById("all").addEventListener("click", function(e) {
+      renderProduct();
+    });
+    //print
+    document
+      .getElementsByClassName("navItem")[1]
+      .addEventListener("click", function(e) {
+        var sortValue = document.getElementById("print").textContent;
+        if (sortValue) {
+          renderProduct(sortValue);
+        }
+      });
+    //branding
+    document
+      .getElementsByClassName("navItem")[2]
+      .addEventListener("click", function(e) {
+        var sortValue2 = document.getElementById("branding").textContent;
+        if (sortValue2) {
+          renderProduct(sortValue2);
+        }
+      });
+    //web
+    document
+      .getElementsByClassName("navItem")[3]
+      .addEventListener("click", function(e) {
+        var sortValue3 = document.getElementById("web").textContent;
+        if (sortValue3) {
+          renderProduct(sortValue3);
+        }
+      });
+    //HTML
+    document
+      .getElementsByClassName("navItem")[4]
+      .addEventListener("click", function(e) {
+        var sortValue4 = document.getElementById("HTML").textContent;
+        if (sortValue4) {
+          renderProduct(sortValue4);
+        }
+      });
+    function createElement([imgLink, classImg]) {
+      var galleryItem = document.createElement("img");
+      galleryItem.setAttribute("src", imgLink);
+      galleryItem.setAttribute("class", classImg);
+      return galleryItem;
+    }
+  }
   //slider2 TEAM
   var slide = document
     .getElementsByClassName("slider2")[0]

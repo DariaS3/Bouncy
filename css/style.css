@@ -184,6 +184,15 @@ body #Portfolio .container .nav .navItem p:hover + .hoverEffect {
 
 body #Portfolio .container .gallery {
   padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body #Portfolio .container .gallery img {
+  padding: 5px 5px;
+  width: 25%;
+  height: auto;
+  background-position: center;
 }
 
 body #Team .container {
